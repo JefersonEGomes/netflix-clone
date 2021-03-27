@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icon-->
+    <link rel="icon" href="./img/Assets/favicon.ico" type="image/x-icon">
+
+    <!--css principal-->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Netflix</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="">Séries</a>
+                <a href="">Filmes</a>
+                <a href="">Documentários</a>
+            </nav>
+        </div>
+    </header>    
+
+    <main>
+        <div id="test" class="filme-principal">
+            <div class="container">
+                <h3 id="tituloId" class="titulo">Pantera Negra</h3>
+                <p id="descricaoId" class="descricao">O príncipe T'Challa retorna a Wakanda para ser coroado rei. Assumindo o manto de Pantera Negra, ele vai à caça de um vilão que roubou um precioso metal de seu país.</p>
+                <div class="botoes">
+                    <a id="linkTrailer" href="https://youtu.be/wL4a4MafSjQ" target="_blank">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        Assitir Trailer
+                    </button>
+                    </a>
+        
+                    <a id="linkInfo" href="https://www.themoviedb.org/movie/284054-black-panther?language=pt-BR" target="_blank">
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                         Informações
+                    </button>
+                    </a>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <button  class ="botaoMini" onclick="transicaoAvatar()">
+                <img class="box-filme" src="./img/Mini/avatarMini.jpg" alt="capa do filme avatar">
+            </button>
+            </div>
+
+            <div class="item">
+                <button onclick="transicaoBlack()">
+                <img class="box-filme" src="./img/Mini/blackPantherMini.jpg" alt="capa do filme Pantera negra">
+            </button>
+            </div>
+
+            <div class="item">
+                <button onclick="transicaoAvengersInfinity()">
+                <img class="box-filme" src="./img/Mini/avengersInfinityWarMIni.jpg" alt="capa do filme vingadores guerra infinita">
+                </button>
+            </div>
+
+            <div class="item">
+                <button onclick="transicaoAvengersUltimato()">
+                <img class="box-filme" src="./img/Mini/avengersUltMini.jpg" alt="capa do filme vingadores ultimato">
+                </button>
+            </div>
+
+
+            <div class="item">
+                <button onclick="transicaoCivilWar()">
+                <img class="box-filme" src="./img/Mini/civilWarMini.jpg" alt="capa do filme guerra civil">
+                </button>
+            </div>
+
+            
+            <div class="item">
+                <button onclick="transicaoCroods2()">
+                <img class="box-filme" src="./img/Mini/croods2Mini.jpg" alt="capa do filme os croods 2">
+                </button>
+            </div>
+
+            
+            <div class="item">
+                <button onclick="transicaoGodzillaVsKong()">
+                <img class="box-filme" src="./img/Mini/godzilaVsKongMini.jpg" alt="capa do filme godzila vs king kong">
+                </button>
+            </div>
+
+            
+            <div class="item">
+                <button onclick="transicaoRaya()">
+                <img class="box-filme" src="./img/Mini/rayaMini.jpg" alt="capa do filme raya">
+                </button>
+            </div>
+
+            
+            <div class="item">
+                <button onclick="transicaoSmallville()">
+                <img class="box-filme" src="./img/Mini/smallvilleMini.jpg" alt="capa da série smallville">
+                </button>
+            </div>
+
+            
+            <div class="item">
+                <button  onclick="transicaoStarWars()">
+                <img class="box-filme" src="./img/Mini/starWarsMini.jpg" alt="capa do filme stars war">
+                </button>
+            </div>
+
+            
+            <div class="item">
+                <button onclick="transicaoTomEJerry()">
+                <img class="box-filme" src="./img/Mini/tomEJerryMini.jpg" alt="capa do filme tom e jerry">
+                </button>
+            </div>
+
+            
+
+          
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ec9d0adbc9.js" crossorigin="anonymous"></script>
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/setup.js"></script>
+    <script src="./js/functions.js"></script>
+</body>
+</html>
